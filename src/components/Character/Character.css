@@ -1,0 +1,18 @@
+.smallBlocks{
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.imgRaM{
+    width: 199px;
+    height: 200px;
+    border-radius: 35px;
+}
+.header{
+    border: 2px solid #000000;
+    border-radius: 25px;
+}
+.header:hover{
+    background: #ff4343;
+}

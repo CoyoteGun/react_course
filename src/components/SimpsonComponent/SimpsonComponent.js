@@ -1,11 +1,18 @@
-export const SimpsonComponent = (props) => {
-   const {itemName, pctr} = props;
+import './SimpsonCompnt.css';
+
+const SimpsonComponent = ({simpson}) => {
+    const {name, image, info} = simpson;
     return (
-        <div>
-            <h2>{itemName}</h2>
-            <img src={pctr} alt="Homer"/>
+        <div className={'block'}>
+        <div className={'blocks'}>
+            <h2>{name}</h2>
+            <img className={'img'} src={image} alt={name}/>
+            <p> Info: {info} </p>
+        </div>
         </div>
     );
-}
+};
 
-export default SimpsonComponent;
+export {
+    SimpsonComponent
+};
