@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { SimpsonComponent } from "./components/SimpsonComponent/SimpsonComponent";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SimpsonComponent
+          itemName={'Homer'}
+          pctr={'https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png'}
+      />
+
+      <SimpsonComponent
+          itemName={'Bart'}
+          pctr={'https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png'}
+      />
     </div>
   );
 }
 
-export default App;
+export {App};
