@@ -2,34 +2,26 @@ import {useEffect, useState} from "react";
 
 import './App.css';
 
-import {Posts} from "./components/Posts";
-import {PostDetails} from "./components/PostDetails";
-import {getPosts} from "./api/getPosts";
-
-
-
-
 const App = () => {
-    const [posts, setPosts] = useState([]);
-    const [postId, setPostId] = useState(null);
+
+    const [launches, setLaunches] = useState([]);
 
     useEffect(() => {
-        getPosts().then(resp => setPosts(resp));
-    },[]);
-
+        fetch('https://api.spacexdata.com/v3/launches/')
+            .then(resp => resp.json())
+            .then(resp => setLaunches(resp))
+    });
   return (
       <div className={'App'}>
-
-          <div className={'info-block'}>
-              {!!posts.length && <Posts posts={posts} onSelectPost={id => setPostId(id)}/>}
-          </div>
-
-          <div className={'divider'}/>
-
-          <div className={'info-block'}>
-              {!!postId && <PostDetails postId={postId}/>}
-          </div>
-
+          {
+              launches.filter(item => item.launch_year !== '2020').map(item => {
+                  return(
+                      <div key={item.flight_number}>
+                          {item.flight_number} - {item.mission_name} - {item.launch_year}
+                      </div>
+                  )
+              })
+          }
       </div>
   );
 };
