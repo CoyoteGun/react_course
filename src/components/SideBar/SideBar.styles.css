@@ -1,0 +1,28 @@
+.side_bar{
+    padding: 10px;
+    width: 200px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    background-color: #07e2e2;
+}
+.side_bar a{
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+
+}
+.side_bar a[class='active']{
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    background-color: aquamarine;
+}
+

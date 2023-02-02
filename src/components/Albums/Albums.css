@@ -1,0 +1,13 @@
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.block_content{
+    background: #ff7f25;
+    width: 700px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+}

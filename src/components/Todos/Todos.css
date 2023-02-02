@@ -1,0 +1,8 @@
+.todos_block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.todos_content{
+    background: lightgray;
+}

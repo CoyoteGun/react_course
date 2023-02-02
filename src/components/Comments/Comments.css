@@ -1,0 +1,10 @@
+.comment_block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 500px;
+    overflow-y: scroll;
+}
+.comment_content{
+    background: lightgray;
+}
