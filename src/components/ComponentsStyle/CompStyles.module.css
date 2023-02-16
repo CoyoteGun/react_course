@@ -1,0 +1,63 @@
+.container{
+    background:  url('https://wallpaperaccess.com/full/1151553.jpg') 0 0 no-repeat;
+}
+.content {
+    margin: 20px;
+    display: flex;
+}
+/*===============================================================*/
+.input_box_car {
+    padding: 10px;
+    width: 300px;
+}
+.input_box_car input {
+    width: 100%;
+    padding: 20px 10px 10px;
+    border: 1px solid #ff8a36;
+    border-radius: 8px;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+}
+/*===============================================================*/
+.create_btn{
+    border: 2px solid  #ff6507;
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #0b0808;
+}
+.create_btn:hover{
+    background: #ff6507;
+    color: #ffffff;
+}
+/*===============================================================*/
+.car_block{
+    margin: 20px;
+    padding: 5px;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #ff6507;
+    border-radius: 8px;
+    color: #ffffff;
+}
+.car_btn{
+    border: 2px solid  #ff6507;
+    width: 60px;
+    height: 35px;
+    border-radius: 14px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #1e1c1c;
+    color: #ffffff;
+}

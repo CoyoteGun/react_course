@@ -1,0 +1,18 @@
+.Main_Layout{
+    min-height: 100vh;
+    background:  url('https://wallpaperaccess.com/full/1151553.jpg') 0 0 no-repeat;
+}
+.container{
+    padding: 20px;
+}
+.title {
+    width: 400px;
+    height: 120px;
+    background: #fb8221;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*===============================================================*/
